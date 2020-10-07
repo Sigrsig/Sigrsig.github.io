@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Sos</title>
+	<link href="styles.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/1f9ef72ca0.js" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+	$(document).ready(function(){
+	  $("a").on('click', function(event) {
+		if (this.hash !== "") {
+		  event.preventDefault();
+		  var hash = this.hash;
+		  $('html, body').animate({
+			scrollTop: $(hash).offset().top
+		  }, 300, function(){
+			window.location.hash = hash;
+		  });
+		}
+	  });
+	});
+	</script>
+</head>
+
+<body>
+	<header>
+		<div class="index">
+			<a class="indbut" href="index.html">Home</a>
+			<a class="indbut" href="">CV</a>
+			<a class="indbut" href="about.html">About</a>
+			<a class="indbut" href="contact.html">Contact</a>
+		</div>
+	</header>
+	
+	<main>
+	
+		<div class="intro">
+			<div class="itext">
+				<h1>Sigga Ösp</h1>
+				<h3>Front end developer</h3>
+				<p>Based in Berlin, Germany</p>
+			</div>
+			<a href="#section2" id="scrolldw"><input  type="image" src="img/icons8-double-down-50.png" /></a>
+		</div>
+		
+		<div class="main" id="section2"></div>
+		<div id="skills">
+			<h2>Proficiency in:</h2>
+			<div class="profs">
+				<div class="profic"><img src="img/icon_html5.png" alt="HTML5 icon"> <p>HTML</p></div>
+				<div class="profic"><img src="img/icon_css3.png" alt="CSS3 icon"> <p>CSS</p></div>
+				<div class="profic"><img src="img/icon_js.png" alt="JavaScript icon"> <p>JavaScript</p></div>
+				<div class="profic"><img src="img/icon_sql.png" alt="SQL icon"> <p>SQL</p></div>
+				<div class="profic"><img src="img/icon_python.png" alt="Python icon"> <p>Python</p></div>
+				<div class="profic"><img src="img/icon_r.png" alt="R Studio icon"> <p>R Studio</p></div>
+				<div class="profic"><img src="img/icon_ps.png" alt="Photoshop icon"> <p>Photoshop</p></div>
+			</div>
+			<div id="currwork">
+				<h3>Currently working on:</h3>
+				<div class="profic"><img src="img/icon_react.png" alt="React Native icon"> <p>React</p></div>
+			</div>
+		</div>
+		
+		<div id="mywork">
+			<h2>My Work</h2>
+			<div class="workex">
+				<div class="singex">
+					<div class="extext">
+						<h3>Sales Website</h3>
+						<p>A simple sales website created for a web design course</p>
+						<div class="mdw">
+							<p>Made with:</p>
+							<i class="fab fa-html5" style="font-size:3em; padding-right:0.2em;"></i>
+							<i class="fab fa-css3-alt" style="font-size:3em; padding-right:0.2em;"></i>
+						</div>
+						<a href="https://github.com/Sigrsig/Online-Shop">&gt; Play</a>
+						
+						
+						
+					</div>
+					<img src="img/CodeExamples/foothjo.png" class="imgex" alt="Screenshot of sales website">
+				</div>
+				<div class="singex">
+					<img src="img/CodeExamples/excss.png" class="imgex" alt="Screenshot from a CSS animation">
+					<div class="extext">
+						<h3>CSS Examples</h3>
+						<p>Animations examples in CSS</p>
+						<div class="mdw">
+							<p>Made with:</p>
+							<i class="fab fa-html5" style="font-size:3em; padding-right:0.2em;"></i>
+							<i class="fab fa-css3-alt" style="font-size:3em; padding-right:0.2em;"></i>
+						</div>
+						<a href="https://github.com/Sigrsig/CSS-Animations">&gt; Code</a>
+						
+					</div>
+				</div>
+				<div class="singex">
+					<div class="extext">
+						<h3>Bubble Trouble</h3>
+						<p>A bubble Trouble style game, made for a game making course</p>
+						<div class="mdw">
+							<p>Made with:</p>
+							<i class="fab fa-html5" style="font-size:3em; padding-right:0.2em;"></i>
+							<i class="fab fa-js-square" style="font-size:3em; padding-right:0.2em;"></i>
+						</div>
+						<a href="https://notendur.hi.is/~eas20/tol308G/bubbletrouble/week3/">&gt; Play</a>
+						
+					</div>
+					<img src="img/CodeExamples/bubblet.PNG" class="imgex" alt="Opening screen of Bubble Trouble game">
+				</div>
+				<div class="singex">
+					<img src="img/CodeExamples/asteroids.png" class="imgex" alt="Screenshot from Asteroids game">
+					<div class="extext">
+						<h3>Asteroids</h3>
+						<p>An Asteroids style game, made for a game making course</p>
+						<div class="mdw">
+							<p>Made with:</p>
+							<i class="fab fa-html5" style="font-size:3em; padding-right:0.2em;"></i>
+							<i class="fab fa-js-square" style="font-size:3em; padding-right:0.2em;"></i>
+						</div>
+						<a href="https://notendur.hi.is/sos42/Asteroids/">&gt; Play</a>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</main>
+	
+	<footer></footer>
+</body>
+</html>

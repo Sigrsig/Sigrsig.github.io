@@ -1,2 +1,2 @@
-# Sigrsig.github.io
-Homepage
+# homepage
+Draft for my current homepage
