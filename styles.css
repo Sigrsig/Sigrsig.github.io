@@ -31,6 +31,7 @@ h1 {
 h2 {
 	text-decoration: underline;
 	text-decoration-color: #FF22F3;
+	padding-bottom: 1em;
 }
 
 
@@ -182,6 +183,7 @@ header {
 	padding: 1em;
 	display: flex;
 	justify-content: space-between;
+	
 }
 
 #aboutme * {
@@ -228,3 +230,12 @@ header {
 	}
 }
 
+#vaktin-img {
+	height: 200px;
+	object-fit: cover;
+	object-position: 0 0;
+}
+
+#curr-work {
+	padding-bottom: 5em;
+}
