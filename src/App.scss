@@ -1,0 +1,102 @@
+
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+:root {
+    --background-color: rgba(19,24,28,255);
+    --font-color: rgba(173,222,224,255);
+    --bar-left : rgba(5,82,152,255);
+    --bar-right: rgba(11,56,95,255);
+    --next-button-color: rgba(241,17,64,255);
+
+}
+
+html {
+    background-color: var(--background-color);
+    color: var(--font-color);
+    font-family: 'Montserrat', sans-serif;
+    max-width: 80vw;
+    margin: auto;
+}
+
+h2, h3 {
+    background: linear-gradient(90deg, var(--bar-left) 0%, var(--bar-right) 100%);
+	border: solid rgba(12,139,187,255)
+    2px;
+	padding: 0.5em;
+}
+
+
+p{
+    font-size: 1.5em;
+}
+
+li {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    font-family: 'Montserrat', sans-serif;
+    max-width: 60vw;
+    background-color: var(--background-color);
+    border: 1px solid var(--font-color);
+    padding: 0.5em;
+    color: var(--font-color);
+}
+
+label {
+    padding-bottom: 0.25em;
+}
+
+
+.page-section {
+    min-height: 80vh;
+}
+
+.roll-butt {
+	background-color: var(--font-color);
+	border: none;
+	padding: 0.5em;
+}
+
+//Pages
+.page-section {
+    display:none;
+}
+
+#intro-page{
+    display: block;
+}
+
+// Next/prev buttons
+#button-area {
+    display: flex;
+}
+
+.button-icon {
+    background-color: var(--font-color);
+    color: var(--background-color);
+    padding: 0.5em;
+    
+}
+
+
+
+.next-button {
+    padding: 0.5em;
+    margin-left: 0.5em;
+    width: 25vw;
+    border: 1px solid var(--font-color);
+    color: var(--font-color);
+
+    background: linear-gradient(to right, var(--next-button-color) 50%, var(--background-color) 50%);
+    background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all .5s ease-out;
+}
+
+.next-button:hover {
+    background-position: left bottom;
+  }
